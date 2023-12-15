@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Faustina:ital,wght@1,500&family=Orbitron&family=Poppins:wght@200;300;400;700;800&family=Quicksand&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background-image: url(imagem\ de\ fundo\ clark.png);
+    margin-top: -20%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 50px;
+
+
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #131313;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #960505;
+    border-radius: 20px;
+
+}
+
+.title1 {
+    color: var(--degade2, #960505);
+    font-family: 'Poppins';
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 600;
+    margin-top: 25%;
+    margin-left: 28%;
+    position: absolute;
+}
+
+.legenda1 {
+    color: #f8f8f8;
+    text-align: center;
+    font-family: 'Orbitron';
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    margin-top: 50%;
+    margin-left: 10%;
+    position: absolute;
+    animation: 2s movimento linear alternate infinite;
+}
+
+@keyframes movimento {
+    from {
+        margin-top: 52%;
+    }
+
+    to {
+        margin-top: 50%;
+    }
+}
+
+.historia {
+    height: 500px;
+    width: 100%;
+    background-color: #131313;
+    box-shadow: 0px -90px 90px #131313;
+    display: flex;
+    text-align: left;
+    margin-top: 50px;
+
+}
+
+.arrow {
+    margin-top: 60%;
+    margin-left: 45%;
+
+}
+
+.clark1 {
+    margin-top: 5%;
+    margin-left: 1%;
+    border-radius: 10px;
+}
+
+.text {
+    font-family: "Poppins";
+    font-size: 20px;
+    text-align: left;
+    margin-top: 10px;
+    color: #f8f8f8;
+}
+
+#bg {
+    background-color: #131313;
+}
+
+.text1 {
+    font-family: "Poppins";
+    font-size: 20px;
+    text-align: left;
+    margin-top: 40px;
+    color: #f8f8f8;
+}
+
+span {
+    background-image: linear-gradient(to left, #DE0000, #ffff);
+    background-size: 500% 100%;
+    animation: mov-degrade 3s linear infinite alternate;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 1.5s;
+}
+
+span:hover {
+
+    border-bottom: 4px solid transparent;
+    border-image: linear-gradient(to left, #DE0000, #ffff);
+    border-image-slice: 1;
+    animation: movmento-da-linha 5s linear;
+
+
+}
+
+
+@keyframes mov-degrade {
+    0% {
+        background-position-x: 0%;
+
+    }
+
+    100% {
+        background-position: 100%;
+    }
+}
+
